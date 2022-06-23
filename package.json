@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"packageManager": "pnpm@7.1.0",
 	"scripts": {
+		"preinstall": "npx only-allow pnpm",
 		"dev": "pnpm -r --parallel --filter=./packages/** run dev",
 		"build": "pnpm -r --filter=./packages/** run build",
 		"release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
@@ -13,6 +14,7 @@
 	},
 	"devDependencies": {
 		"bumpp": "^8.2.1",
+		"only-allow": "^1.1.1",
 		"pnpm": "^7.3.0",
 		"rollup": "^2.75.7",
 		"typescript": "^4.7.3"
