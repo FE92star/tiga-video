@@ -1,0 +1,27 @@
+{
+  "name": "@tiga/plugin-danmu",
+  "version": "0.0.1",
+  "description": "a danmu tiga plugin",
+  "private": true,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "*.mjs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FE92star/tiga-video/packages/tiga-plugin-danmu"
+  },
+  "keywords": [
+    "video",
+    "plugin"
+  ],
+  "author": "Bob",
+  "license": "MIT"
+}

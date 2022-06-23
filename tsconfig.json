@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "paths": {
+      "@tiga/loader": ["./packages/tiga-loader/src/index.ts"],
+      "@tiga/plugin-danmu": ["./packages/tiga-plugin-danmu/src/index.ts"]
+    }
+  },
+  "exclude": [
+    "**/dist/**",
+    "./packages/vitest/dist/**",
+    "./packages/ui/client/**",
+    "./examples/**/*.*",
+    "./bench/**"
+  ]
+}
