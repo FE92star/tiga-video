@@ -1,1 +1,1 @@
-export const loaderId = Symbol("loader");
+export const loaderId = Symbol('loader')
